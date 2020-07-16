@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "strict": false,
+        "pretty": true,
+        "declarationDir": "build",
+        "module": "esnext",
+        "target": "es5",
+        "lib": ["ES6", "ES2017", "ES2016", "DOM"],
+        "jsx": "react",
+        "sourceMap":true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*"],
+    "exclude": [
+        "node_modules",
+        "build",
+        "src/**/*.mdx",
+        "src/**/*.test.ts",
+        "src/**/*.test.tsx",
+    ]
+}
