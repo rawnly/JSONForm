@@ -10,6 +10,9 @@
     yarn add @rawnly/json-form
 ```
 
+## Style
+You can use both Github `@primer/css` and `bootstrap`, just import them in your project and it will work out of the box :tada:
+
 ## Usage
 All you need to do is to define a structure, you can easily do it like in the example below:
 
