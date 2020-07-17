@@ -1,3 +1,33 @@
+const path = require('path')
+
 module.exports = {
-    stores: ['../src/**/*.stories.js']
+    stories: ['../src/**/*.stories.tsx'],
+    addons: [],
+    webpackFinal: async config => {
+        config.module.rules.push({
+            test: /\.scss$/,
+            use: ["style-loader", "css-loader", "sass-loader"],
+            include: path.resolve(__dirname, '../')
+        });
+
+        config.module.rules.push({
+            test: /\.ts(x|)$/,
+            loader: require.resolve("babel-loader"),
+            options: {
+                presets: [
+                    [
+                        "react-app",
+                        {
+                            flow: false,
+                            typescript: true
+                        }
+                    ]
+                ]
+            }
+        });
+
+        config.resolve.extensions.push('.ts', '.tsx')
+
+        return config;
+    }
 }
