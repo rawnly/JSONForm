@@ -3,11 +3,11 @@
 
 ## Installation
 ```sh
-    npm install @rawnly/json-form --save
+    npm install @react-json-form/bootstrap --save
 
     # or
 
-    yarn add @rawnly/json-form
+    yarn add @react-json-form/bootstrap
 ```
 
 ## Style
@@ -17,7 +17,7 @@ You can use both Github `@primer/css` and `bootstrap`, just import them in your 
 All you need to do is to define a structure, you can easily do it like in the example below:
 
 ```ts
-import { FormStructure } from '@rawnly/json-form'
+import { FormStructure } from '@react-json-form/bootstrap'
 
 interface FormValues {
     firstName: string;

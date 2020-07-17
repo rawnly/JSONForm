@@ -1,6 +1,6 @@
 {
-  "name": "@rawnly/json-form",
-  "version": "1.0.0",
+  "name": "@react-json-form/bootstrap",
+  "version": "0.1.0",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
