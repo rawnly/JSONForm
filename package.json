@@ -1,5 +1,5 @@
 {
-  "name": "json-form",
+  "name": "@rawnly/json-form",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.es.js",
